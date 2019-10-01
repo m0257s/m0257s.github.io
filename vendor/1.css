@@ -1,0 +1,16 @@
+*{
+margin: 0px;
+padding:0px;
+}
+
+@media (max-width:576px ){
+	*{}
+}
+@media (max-width:576px ){
+	a.navbar-brand{
+		display:block;
+		text-align:center;
+		width: 100%;
+	}
+}
+
