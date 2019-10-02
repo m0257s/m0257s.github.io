@@ -1,0 +1,59 @@
+.nametille {
+  text-align: center; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@media (max-width: 575px) {
+  .logopage {
+    margin: auto; }
+
+  .fontmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center !important; }
+    .fontmenu li {
+      padding-top: 2px !important;
+      padding-bottom: 2px !important; }
+      .fontmenu li a {
+        font-family: "seoge ui light";
+        font-size: 15px;
+        font-weight: bold;
+        font-style: italic; } }
+.menustardisplayatrightside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.navcoler {
+  background-color: #5d555d57; }
+
+.fontmenu {
+  flex-direction: row; }
+  .fontmenu li {
+    font-family: "seoge ui light";
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 10px;
+    border-radius: 10px;
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.noidung {
+  width: 1000px;
+  margin: auto; }
+  .noidung .cot {
+    background-coler: lightblue;
+    width: 313.3333333333px; }
+    .noidung .cotlast-child {
+      margin-right: 0px; }
+
+/*# sourceMappingURL=2.css.map */

@@ -1,0 +1,86 @@
+$font1:'seoge ui light';
+
+
+$size1: 48px;
+$size2: 15px;
+
+$color1:#5d555d57;
+
+
+
+.nametille{
+	text-align: center;
+}
+*{
+	margin: 0px;
+	padding:0px;
+}
+
+@mixin flexend() {
+	 display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+//xs size nho nhat
+@media (max-width: 575px){
+	.logopage{margin:auto;}
+	.fontmenu{
+		@include flexend;
+		justify-content: center!important;
+		li{
+			padding-top: 2px!important;
+			padding-bottom: 2px!important;
+			a{
+			font:{
+			family: $font1;
+			size: $size2;
+			weight: bold;
+			style:italic;
+			
+		}}}
+	}
+}
+
+
+
+.menustardisplayatrightside{
+	@include flexend;
+}
+
+.navcoler{
+	background-color: $color1;
+}
+.fontmenu{ flex-direction: row;
+ li{
+		font:{
+			family: $font1;
+			size: $size1;
+			weight: bold;
+			style:italic;
+		}
+line-height: 10px;
+border-radius: 10px;
+background-color:red;
+width: 100px;
+text-align: center;
+text-transform: uppercase;
+margin-left:20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}}
+
+// khoi noi dung 1000px, trong do co 3 cot va
+// co last-child ben phai
+$dorongnoidung: 1000px;
+$khoangcachcot: 30px;
+.noidung{
+	width: $dorongnoidung;
+	margin:auto;
+	.cot{background-coler:lightblue;
+		width: ($dorongnoidung - (2*$khoangcachcot))/3;
+	&last-child{
+		margin-right:0px;
+	}
+	}
+}
