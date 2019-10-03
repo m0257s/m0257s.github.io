@@ -1,68 +1,73 @@
 $font1:'seoge ui light';
 
 
-$size1: 48px;
+$size1: 20px;
 $size2: 15px;
 
-$color1:#5d555d57;
+$colormenu:#9da7b3;
 
-
-
-.nametille{
-	text-align: center;
-}
-*{
+@mixin reset() {
 	margin: 0px;
 	padding:0px;
 }
 
+*{
+	@include reset;
+}
+
 @mixin flexend() {
-	 display: flex;
+	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: flex-end!important;
 }
 
-//xs size nho nhat
-@media (max-width: 575px){
-	.logopage{margin:auto;}
-	.fontmenu{
-		@include flexend;
-		justify-content: center!important;
-		li{
-			padding-top: 2px!important;
-			padding-bottom: 2px!important;
-			a{
-			font:{
-			family: $font1;
-			size: $size2;
-			weight: bold;
-			style:italic;
-			
-		}}}
+//xs size nho nhat mobile
+@media (min-width: 0px){
+
+.text-xs-center {
+
+	text-align: center !important;
+  }
+
+	.logopage{
+		margin-left:20px;
+		width: 100px;
 	}
+
+
+  .rightmenu ul {
+	display:block;
+  	@include reset;
+  	li{
+  	@include reset;
+  	font-family: $font1;
+	font-size: $size2;
+	line-height:48px;
+	width: 100%;
+	a{
+		@include reset;
+
+	}
+  }}
+}	
+//het mobile
+
+
+.navcolor{
+	background-color: $colormenu;
 }
 
 
-
-.menustardisplayatrightside{
-	@include flexend;
-}
-
-.navcoler{
-	background-color: $color1;
-}
-.fontmenu{ flex-direction: row;
+.rightmenu{ justify-content: flex-end;
  li{
 		font:{
 			family: $font1;
 			size: $size1;
 			weight: bold;
-			style:italic;
 		}
 line-height: 10px;
 border-radius: 10px;
-background-color:red;
-width: 100px;
+width: 150px;
 text-align: center;
 text-transform: uppercase;
 margin-left:20px;
@@ -83,4 +88,8 @@ $khoangcachcot: 30px;
 		margin-right:0px;
 	}
 	}
+}
+//het koinoidung
+.nametille{
+	text-align: center;
 }

@@ -1,46 +1,41 @@
-.nametille {
-  text-align: center; }
-
 * {
   margin: 0px;
   padding: 0px; }
 
-@media (max-width: 575px) {
+@media (min-width: 0px) {
+  .text-xs-center {
+    text-align: center !important; }
+
   .logopage {
-    margin: auto; }
+    margin-left: 20px;
+    width: 100px; }
 
-  .fontmenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    justify-content: center !important; }
-    .fontmenu li {
-      padding-top: 2px !important;
-      padding-bottom: 2px !important; }
-      .fontmenu li a {
-        font-family: "seoge ui light";
-        font-size: 15px;
-        font-weight: bold;
-        font-style: italic; } }
-.menustardisplayatrightside {
-  display: flex;
-  flex-direction: row;
+  .rightmenu ul {
+    display: block;
+    margin: 0px;
+    padding: 0px; }
+    .rightmenu ul li {
+      margin: 0px;
+      padding: 0px;
+      font-family: "seoge ui light";
+      font-size: 15px;
+      line-height: 48px;
+      width: 100%; }
+      .rightmenu ul li a {
+        margin: 0px;
+        padding: 0px; } }
+.navcolor {
+  background-color: #9da7b3; }
+
+.rightmenu {
   justify-content: flex-end; }
-
-.navcoler {
-  background-color: #5d555d57; }
-
-.fontmenu {
-  flex-direction: row; }
-  .fontmenu li {
+  .rightmenu li {
     font-family: "seoge ui light";
-    font-size: 48px;
+    font-size: 20px;
     font-weight: bold;
-    font-style: italic;
     line-height: 10px;
     border-radius: 10px;
-    background-color: red;
-    width: 100px;
+    width: 150px;
     text-align: center;
     text-transform: uppercase;
     margin-left: 20px;
@@ -55,5 +50,8 @@
     width: 313.3333333333px; }
     .noidung .cotlast-child {
       margin-right: 0px; }
+
+.nametille {
+  text-align: center; }
 
 /*# sourceMappingURL=2.css.map */
