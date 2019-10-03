@@ -58,7 +58,10 @@ $colormenu:#9da7b3;
 }
 
 
-.rightmenu{ justify-content: flex-end;
+.rightmenu{
+	@include flexend;
+	width: 100%;
+
  li{
 		font:{
 			family: $font1;
@@ -92,4 +95,8 @@ $khoangcachcot: 30px;
 //het koinoidung
 .nametille{
 	text-align: center;
+}
+
+.smalltille{
+
 }

@@ -28,7 +28,10 @@
   background-color: #9da7b3; }
 
 .rightmenu {
-  justify-content: flex-end; }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end !important;
+  width: 100%; }
   .rightmenu li {
     font-family: "seoge ui light";
     font-size: 20px;
